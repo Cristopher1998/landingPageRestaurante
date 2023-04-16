@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Restaurante</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/9f071ad94a.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Mulish:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -17,14 +18,14 @@
                 <div class="contenido-navegacion contenedor">
                     <div class="logo">
                         <h2>La Cascada Club</h2>
-                        <img class="logo-cascada" src="./assets/logoCascada.webp" alt="">
+                        <img class="logo-cascada" data-src="./assets/logoCascada.webp" alt="">
                     </div>
                     <nav class="navegacion ocultar">
-                        <a href="#">Inicio</a>
-                        <a href="#">Sobre Nosotros</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Chef</a>
-                        <a href="#">Contacto</a>
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobre">Sobre Nosotros</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#chef">Chef</a>
+                        <a href="#contacto">Contacto</a>
                     </nav>
                     <div class="hamburguesa">
                         <span></span><span></span><span></span>
@@ -32,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="contenido-header">
+            <div class="contenido-header" id="inicio">
                 <div class="contenedor-encabezado">
                     <div class="texto-encabezado">
                         <h2>Bienvenidos</h2>
@@ -43,25 +44,214 @@
                     </video>
                 </div>
             </div>
+        </header>
 
-            <div class="contenedor-nostros">
-                <div class="texto-nosotros">
-                    <p>Bienvenido a!</p>
-                    <h1>Restaurante La Cascada Club</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quis inventore optio nulla! Ea nesciunt perspiciatis numquam aliquid natus modi nobis asperiores, praesentium accusamus at quaerat quisquam temporibus, eius corrupti.</p>
+        <div class="contenedor-nosotros contenedor" id="sobre">
+            <div class="texto-nosotros">
+                <p class="bienvenida">Bienvenido a</p>
+                <h1>Restaurante Club La Cascada</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quis inventore optio nulla! Ea nesciunt perspiciatis numquam aliquid natus modi nobis asperiores, praesentium accusamus at quaerat quisquam temporibus, eius corrupti.</p>
+                <a href="#" class="btn btn-rojo">Contactar</a>
+            </div>
+            <div class="imagenes-nosotros">
+                <div class="imagen1">
+                    <img data-src="./assets/adobo.jpg" alt="adobo">
                 </div>
-                <div class="imagenes-nosotros">
-                    <div class="imagen1">
-                        <img src="./assets/nosotros1.webp" alt="">
-                    </div>
-                    <div class="imagenes2">
-                        <img src="/assets/nosotros2.webp" alt="">
-                        <img src="/assets/nosotros3.webp" alt="">
-                    </div>
+                <div class="imagenes2">
+                    <img data-src="/assets/salon.jpg" alt="salon de eventos">
+                    <img data-src="/assets/psicinannoche.jpg" alt="piscina de noche">
                 </div>
             </div>
-        </header>
+        </div>
         
+        <section class="menu contenedor" id="menu">
+            <h2 class="texto-platillos">Platillos Populares</h2>
+            <div class="botones-platillos">
+                <button class="todos btn btn-verde">Todos</button>
+                <button class="ensaladas btn btn-verde">Ensaladas</button>
+                <button class="pasta btn btn-verde">Pasta</button>
+                <button class="pizza btn btn-verde">Pizza</button>
+                <button class="postres btn btn-verde">Postres</button>
+            </div>
+            <div class="platillos">
+                <div class="platillo" data-platillo="ensalada">
+                    <img data-src="assets/ensalada.webp" alt="ensalada">
+                    <h2>Quinoa</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="ensalada">
+                    <img data-src="assets/ensalada2.webp" alt="ensalada">
+                    <h2>Quinoa</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="ensalada">
+                    <img data-src="assets/ensalada2.webp" alt="ensalada">
+                    <h2>Quinoa</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pasta">
+                    <img data-src="assets/pasta1.webp" alt="pasta">
+                    <h2>Tallarin</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pasta">
+                    <img data-src="assets/pasta2.webp" alt="pasta">
+                    <h2>Tallarin</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pasta">
+                    <img data-src="assets/pasta2.webp" alt="pasta">
+                    <h2>Tallarin</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pizza">
+                    <img data-src="assets/pizza1.webp" alt="pizza">
+                    <h2>Pizza</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pizza">
+                    <img data-src="assets/pizza2.webp" alt="pizza">
+                    <h2>Pizza</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pizza">
+                    <img data-src="assets/pizza2.webp" alt="pizza">
+                    <h2>Pizza</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="postre">
+                    <img data-src="assets/postres1.webp" alt="postre">
+                    <h2>Postres</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="postre">
+                    <img data-src="assets/postres2.webp" alt="postre">
+                    <h2>Postres</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="postre">
+                    <img data-src="assets/postres3.webp" alt="postre">
+                    <h2>Postres</h2>
+                    <p>Ingredientes</p>
+                    <div class="precio">
+                        <p>$40.0</p>
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="separador">
+            <div class="contenido-separador contenedor">
+                <h2>Un rico Queso helado para empezar bien el día</h2>
+                <p>Empieza tu día desgustando de nuestros postres,solo en Club la Cascada.</p>
+                <a class="btn btn-verde" href="#">Ordenar Ahora</a>
+            </div>
+        </div>
+
+        <section class="chef contenedor" id="chef">
+            <h2>Chef Ejecutivo</h2>
+            <div class="contenido-chef">
+                <div class="texto-chef">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum quae odio quisquam, possimus commodi, quos odit, nisi nesciunt dolor non vel atque nulla cumque. Molestiae similique temporibus tempore ullam.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta excepturi aut velit, eius porro repudiandae placeat minus voluptas atque eveniet architecto recusandae necessitatibus natus corporis quae </p>
+                    <a href="#" class="btn btn-verde">Leer Biografia</a>
+                </div>
+                <div class="imagen-chef">
+                    <img data-src="/assets/chef.webp" alt="foto del chef">
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="formulario-contacto contenedor" id="contacto">
+            <div class="informacion-contacto">
+                <h3>Contactanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Pedregal-Majes</p>
+                <p><i class="fas fa-envelope"></i>consorcioempresarial.lacascada@gmail.com</p>
+                <p><i class="fas fa-phone-volume"></i>+5191231231</p>
+                <div class="redes-sociales">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram" style="color: white;"></i>                  
+                </div>
+            </div>
+
+            <form class="formulario ">
+                <div class="input-formulario">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre">
+                </div>
+                <div class="input-formulario">
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos">
+                </div>
+                <div class="input-formulario">
+                    <label for="correo">Correo: </label>
+                    <input type="email" placeholder="ejemplo@gmail.com" id="correo">
+                </div>
+                <div class="input-formulario">
+                    <label for="telefono">Teléfono: </label>
+                    <input type="tel" placeholder="+51 xxx xxx xxx" id="telefono">
+                </div>
+                <div class="input-formulario">
+                    <label for="mensaje">mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div class="btn-formulario">
+                    <input type="submit" class="btn btn-verde" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>Desarrollado por Cristopher Sanchez.</p>  
+            <a href="https://www.instagram.com/troeno_yts/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a>
+            <a href="https://github.com/Cristopher1998" target="_blank"><i class="fa-brands fa-square-github" style="color: #ffffff;"></i></a>
+        </div>
         <script src="js/app.js"></script>
 
     </body>
